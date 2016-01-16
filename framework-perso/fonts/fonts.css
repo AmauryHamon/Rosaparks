@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Unica';
+    src: url('NeueHaasUnicaPro-Thin.eot'); /* IE9 Compat Modes */
+    src: url('NeueHaasUnicaPro-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('NeueHaasUnicaPro-Thin.woff') format('woff'), /* Modern Browsers */
+         url('NeueHaasUnicaPro-Thin.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('NeueHaasUnicaPro-Thin.svg#3e9b4870ff5e15180f6a2671c500cc54') format('svg'); /* Legacy iOS */
+    font-style:   normal;
+    font-weight:  normal;
+}
+
+@font-face {
+    font-family: 'agiporegular';
+    src: url('agipo_regular-webfont.eot');
+    src: url('agipo_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('agipo_regular-webfont.woff2') format('woff2'),
+         url('agipo_regular-webfont.woff') format('woff'),
+         url('agipo_regular-webfont.ttf') format('truetype'),
+         url('agipo_regular-webfont.svg#agiporegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
