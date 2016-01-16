@@ -1,0 +1,177 @@
+/* grid.css */
+
+#debug {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	overflow: hidden;
+}
+
+	#debug > .grid { margin-top: 0; }
+
+	#debug > .grid,
+	#debug > .grid > .row {	height: 100%; }
+
+		#debug > .grid > .row > .column,
+		#debug > .grid > .row > .column > div {
+			height: 100%;
+			background-color: rgba(255, 0, 0, .25);
+		}
+
+.grid {
+	position: relative;
+	width: 100%;
+	/*max-width: 1024px;*/
+	margin: 1em auto 0;
+}
+
+.row { margin-bottom: 1em; }
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.column {
+	padding: 0 .5em;
+	float: left;
+}
+
+.one.column				{ width: 8.333333333%; }
+.two.column				{ width: 16.666666667%; }
+.three.column			{ width: 25%; }
+.four.column			{ width: 33.333333333%; }
+.five.column			{ width: 41.666666667%; }
+.six.column,
+.half.column			{ width: 50%; }
+.seven.column			{ width: 58.333333333%; }
+.eight.column			{ width: 66.666666667%; }
+.nine.column			{ width: 75%; }
+.ten.column				{ width: 83.333333333%; }
+.eleven.column			{ width: 91.666666667%; }
+.twelve.column,
+.full.column			{ width: 100%; }
+
+.offset-one.column		{ margin-left: 8.333333333%; }
+.offset-two.column		{ margin-left: 16.666666667%; }
+.offset-three.column	{ margin-left: 25%; }
+.offset-four.column		{ margin-left: 33.333333333%; }
+.offset-five.column		{ margin-left: 41.666666667%; }
+.offset-six.column		{ margin-left: 50%; }
+.offset-seven.column	{ margin-left: 58.333333333%; }
+.offset-eight.column	{ margin-left: 66.666666667%; }
+.offset-nine.column		{ margin-left: 75%; }
+.offset-ten.column		{ margin-left: 83.333333333%; }
+.offset-eleven.column	{ margin-left: 91.666666667%; }
+
+.offset-right-one.column		{ margin-right: 8.333333333%; }
+.offset-right-two.column		{ margin-right: 16.666666667%; }
+.offset-right-three.column	{ margin-right: 25%; }
+.offset-right-four.column		{ margin-right: 33.333333333%; }
+.offset-right-five.column		{ margin-right: 41.666666667%; }
+.offset-right-six.column		{ margin-right: 50%; }
+.offset-right-seven.column	{ margin-right: 58.333333333%; }
+.offset-right-eight.column	{ margin-right: 66.666666667%; }
+.offset-right-nine.column		{ margin-right: 75%; }
+.offset-right-ten.column		{ margin-right: 83.333333333%; }
+.offset-right-eleven.column	{ margin-right: 91.666666667%; }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+	#debug > .grid > .row > .column,
+	#debug > .grid > .row > .column > div {
+		background-color: rgba(255, 255, 0, .25);
+	}
+
+	.one.column,
+	.two.column		{ width: 16.666666667%; }
+	.three.column,
+	.four.column	{ width: 33.333333333%; }
+	.five.column,
+	.six.column,
+	.seven.column	{ width: 50%; }
+	.eight.column,
+	.nine.column	{ width: 66.666666667%; }
+	.ten.column,
+	.eleven.column	{ width: 83.333333333%; }
+
+	.offset-one.column		{ margin-left: 0%; }
+	.offset-two.column,
+	.offset-three.column	{ margin-left: 16.666666667%; }
+	.offset-four.column,
+	.offset-five.column		{ margin-left: 33.333333333%; }
+	.offset-six.column,
+	.offset-seven.column	{ margin-left: 50%; }
+	.offset-eight.column,
+	.offset-nine.column		{ margin-left: 66.666666667%; }
+	.offset-ten.column,
+	.offset-eleven.column	{ margin-left: 83.333333333%; }
+
+	.l-hidden {
+		display: none;
+	}
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+	#debug > .grid > .row > .column,
+	#debug > .grid > .row > .column > div {
+		background-color: rgba(0, 0, 255, .25);
+	}
+
+	.one.column,
+	.two.column,
+	.three.column,
+	.four.column	{ width: 25%; }
+	.five.column,
+	.six.column,
+	.seven.column,
+	.eight.column	{ width: 50%; }
+	.nine.column,
+	.ten.column,
+	.eleven.column	{ width: 75%; }
+
+	.offset-one.column,
+	.offset-two.column		{ margin-left: 0%; }
+	.offset-three.column,
+	.offset-four.column,
+	.offset-five.column		{ margin-left: 25%; }
+	.offset-six.column,
+	.offset-seven.column,
+	.offset-eight.column	{ margin-left: 50%; }
+	.offset-nine.column,
+	.offset-ten.column,
+	.offset-eleven.column	{ margin-left: 75%; }
+
+	.m-hidden {
+		display: none;
+	}
+
+}
+
+@media (max-width: 480px) {
+
+	#debug > .grid > .row > .column,
+	#debug > .grid > .row > .column > div {
+		background-color: rgba(0, 255, 0, .25);
+	}
+
+	.column {
+		width: 100% !important;
+		margin: 0 0 0 !important;
+	}
+
+	.column:last-child {
+		margin: 0 !important;
+	}
+
+	.s-hidden {
+		display: none;
+	}
+
+}
