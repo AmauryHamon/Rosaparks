@@ -218,9 +218,7 @@ a{
 }
 .image-small-text{
 	max-width: 60%;
-	margin-top: 3%;
-	margin-bottom: 3%;
-	padding: 0;
+	padding: 0.5em;
 }
 .image-large-text{
 	width: 100%;
@@ -231,6 +229,9 @@ a{
 .image-poi{
 	width: 90%;
 	padding-top: 2%;
+}
+.marquee-timeline{
+	line-height: 2em;
 }
 /*SYNOPSIS*/
 
@@ -333,9 +334,14 @@ a{
 	}
 	.image-small-text{
 		max-width: 100% !important;
-		padding-top: 0.5em;
-		padding-bottom: 0.5em;
+		padding-top: 0.5em !important;
+		padding-bottom: 0.5em !important;
 	}
+	.image-large-text{
+		margin-top: 0 !important;
+		margin-bottom: 3% !important;
+	}
+
 
 }
 
@@ -461,7 +467,7 @@ a{
 		margin: 0;
 	}
 	.image-large-text{
-		width: 80%;
+		width: 80% !important;
 		margin-left: 10%;
 	}
 }
@@ -594,12 +600,13 @@ a{
 		margin: 0;
 	}
 	.quote-text {
-	font-size: 2em;
+	font-size: 2.5em;
 	line-height: 1em;
 }
+img.six.column.image-large-text {
+	width: 80% !important;
+}
 	.image-large-text{
-		width: 80%;
-		margin-left: 10%;
 	}
 }
 
