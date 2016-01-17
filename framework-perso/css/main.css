@@ -90,6 +90,7 @@ a{
     bottom: 0.5em;
     left: 0.2em;
     line-height: 0.7em;
+    -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
     /* transform-origin: left top 0; */
 }
