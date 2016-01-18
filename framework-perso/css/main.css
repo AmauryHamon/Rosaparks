@@ -132,7 +132,15 @@ a{
 .next-chapter{
 	width: 33.33% !important;
 }
-
+.change-device-to-tablet > div{
+		display: none !important;
+	}
+.change-device-to-desktop > .next-chapter{
+		display: none;
+	}
+.desktop-only-next-chapter{
+	display: block;
+}
 .bus-line {
 	position: relative;
 	height: 30px;
@@ -254,6 +262,15 @@ a{
 		display: block !important;
 		height: 100%;
 	}
+	.change-device-to-tablet > div{
+		display: block !important;
+	}
+	.change-device-to-desktop > .next-chapter{
+		display: none !important;
+	}
+	.desktop-only-next-chapter{
+		display: none !important;
+	}
 	.menu-fullscreen{
 		height: 100%;
 
@@ -359,6 +376,15 @@ a{
 	}
 	.desktop-only{
 		display: none !important;
+	}
+	.change-device-to-tablet > div{
+		display: none !important;
+	}
+	.change-device-to-desktop > .next-chapter{
+		display: block !important;
+	}
+	.desktop-only-next-chapter{
+		display: block !important;
 	}
 /*MENU*/
 	.vertical-text{
@@ -486,6 +512,15 @@ a{
 	.desktop-only{
 		display: none !important;
 	}
+	.change-device-to-tablet > div{
+		display: none !important;
+	}
+	.change-device-to-desktop > .next-chapter{
+		display: block !important;
+	}
+	.desktop-only-next-chapter{
+		display: block !important;
+	}
 	.home-menu {
 		border: 1px solid rgba(255, 255, 255, 1);
 		height: 100%;
@@ -601,7 +636,7 @@ a{
 		padding-bottom: 0.5em;
 		margin: 0;
 	}
-	.quote-text {
+	.quote-text.column.six {
 	font-size: 2.5em;
 	line-height: 1em;
 }
