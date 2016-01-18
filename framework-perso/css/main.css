@@ -384,7 +384,7 @@ a{
 		display: block !important;
 	}
 	.desktop-only-next-chapter{
-		display: block !important;
+		display: none !important;
 	}
 /*MENU*/
 	.vertical-text{
@@ -519,7 +519,7 @@ a{
 		display: block !important;
 	}
 	.desktop-only-next-chapter{
-		display: block !important;
+		display: none !important;
 	}
 	.home-menu {
 		border: 1px solid rgba(255, 255, 255, 1);
