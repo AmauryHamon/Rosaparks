@@ -668,6 +668,11 @@ img.six.column.image-large-text {
 	    transform-origin: right top 0;
 	}
 }
+@media (min-width: 1500px) {
+	.quote-big {
+		font-size: 6vw;
+	}
+}
 
 @media (max-width: 480px) and (orientation: portrait) {
 	.landscape-only{
